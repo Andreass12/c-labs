@@ -29,7 +29,7 @@ public:
 	void push(int value)
 	{
 		if (place >= size)
-			throw runtime_error("Стэк переполнен");
+			throw runtime_error("РЎС‚СЌРє РїРµСЂРµРїРѕР»РЅРµРЅ");
 
 		Arr[place] = value;
 		place++;
@@ -37,7 +37,7 @@ public:
 
 	void fail() {
 		if (place < 1)
-			throw runtime_error("Стэк пустой");
+			throw runtime_error("РЎС‚СЌРє РїСѓСЃС‚РѕР№");
 		place--;
 		Arr[place] = 0;
 	}
